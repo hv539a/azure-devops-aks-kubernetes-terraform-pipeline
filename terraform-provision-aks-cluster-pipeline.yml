@@ -10,11 +10,11 @@ pool:
 # Step-3: Validate Terraform Manifests
 
 stages: 
-# - stage:  TerraformValidate
-#   jobs:
-#     - job: TerraformValidatejob
-#       continueOnError: false
-#       steps:
+- stage:  TerraformValidate
+  jobs:
+    - job: TerraformValidatejob
+      continueOnError: false
+      steps:
       - task: PublishPipelineArtifact@1
         displayName: Publish Arrtifact
         inputs:
